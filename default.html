@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>DEMO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/default.css">
+<body>
+<audio id="win">
+    <source src="sounds/tada.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+<audio id="lose">
+    <source src="sounds/woosh.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+<div id="header" class="w3-container w3-pale-green">
+    <h2>Play a Memory Game</h2>
+    <p>How to play?</p>
+    <p>1. Turn over any two cards</p>
+    <p>2. If the two cards match, keep them</p>
+    <p>3. If they don't match, turn them back over</p>
+    <p>4. Remember what was on each card and where it was</p>
+    <p>5. You win the game when all the cards have been matched</p>
+    <p>5. You lose the game when you cannot match all the cards within 2 minutes</p>
+</div>
+<div id="timer" class="w3-container">
+</div>
+<div id="main" class="w3-container">
+    <div class="w3-row">
+        <div class="w3-column">
+            <img id="0" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('0')">
+            <img id="1" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('1')">
+            <img id="2" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('2')">
+            <img id="3" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('3')">
+        </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-column">
+            <img id="4" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('4')">
+            <img id="5" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('5')">
+            <img id="6" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('6')">
+            <img id="7" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('7')">
+        </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-column">
+            <img id="8" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('8')">
+            <img id="9" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('9')">
+            <img id="10" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('10')">
+            <img id="11" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('11')">
+        </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-column">
+            <img id="12" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('12')">
+            <img id="13" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('13')">
+            <img id="14" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('14')">
+            <img id="15" src="images/tile.png" class="w3-border w3-padding" onclick="showCard('15')">
+        </div>
+    </div>
+</div>
+<div id="footer" class="w3-container w3-pale-green">
+    <p>Game developer: Cathy's mom</p>
+</div>
+<script src="src/default.js"></script>
+</body>
+</html>
